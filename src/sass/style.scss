@@ -1,0 +1,473 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+}
+.container{
+    position: relative;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-top: 77px;
+}
+.p-normal{
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.w-65{
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.nav{
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 12.5%;
+    background-color: #FFF;
+    z-index: 10;
+    box-shadow: 0 0 15px rgba(0,0,0,.4);
+    min-height: 77px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 3.2rem;
+    color: #303530;
+    text-decoration: none;
+}
+.nav-options{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+}
+.nav-option{
+    padding: 25px 30px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 400;
+    font-size: 1.8rem;
+    transition: background-color .3s, color .3s;
+    cursor: pointer;
+}
+.nav-option:hover{
+    background-color: #000;
+    color: #FFF;
+}
+.header{
+    position: relative;
+    color: #FFF;
+}
+.header .hero-img{
+    position: relative;
+    background-image: url('../img/jungle-1807476_1920.jpg');
+    background-size: cover;
+    background-position: 0 -280px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: 5;
+}
+.header .hero-img-offers{
+    position: relative;
+    background-image: url('../img/jungle-1807476_1920.jpg');
+    background-size: cover;
+    background-position: 0 -280px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: 5;
+}
+.header .hero-shadow{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.7);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.header .hero-text{
+    padding-top: 160px;
+    padding-bottom: 160px;
+}
+.header .hero-text-offers{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.h1{
+    font-weight: 400;
+}
+.h1-offers-page{
+    font-weight: 600;
+    font-size: 3.8rem;
+    text-align: center;
+}
+.h2{
+    font-size: 3.6rem;
+}
+.h2-white{
+    font-weight: 300;
+    font-size: 3.6rem;
+    text-align: center;
+    padding: 60px 0 40px;
+}
+.about-us-title{
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+.about-us-image{
+    width: 50%;
+}
+.about-us-image img{
+    width: 90%;
+    margin-right: 10%;
+}
+.about-us-texts{
+    width: 50%;
+}
+.about-us-text{
+    line-height: 3.2rem;
+}
+.about-us{
+    padding-bottom: 60px;
+}
+.adventure .hero-img{
+    position: relative;
+    background-image: url('../img/girl-5785590_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 5;
+}
+.adventure .hero-shadow{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.5);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.adventure .hero-text{
+    padding: 80px 0;
+    
+}
+.adventure-text{
+    padding: 30px;
+    font-size: 3.2rem;
+    font-weight: 600;
+    text-align: center;
+    color: #FFF;
+    border: 1px solid #FFF;
+}
+.offer{
+    padding-bottom: 65px;
+}
+.h2-offer{
+    padding: 60px 0 16px;
+}
+.offer-subtitle{
+    font-size: 2rem;
+}
+.cards-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.card-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-width: 30%;
+    gap: 5px;
+    padding: 30px 60px;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    border-radius: 8px;
+    transition: box-shadow .3s;
+}
+.card-box:hover{
+    box-shadow: 0 0 15px rgba(0,0,0,.3);
+}
+.card-title{
+    font-size: 2.6rem;
+}
+.card-price{
+    font-size: 2.4em;
+    font-weight: 600;
+}
+.card-option .fa-check{
+    color: lime;
+    font-size: 1.2rem;
+}
+.card-option{
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+.not-in{
+    color: #888;
+}
+.card-options{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 3px;
+}
+.card-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 4px 0;
+    margin-top: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    box-shadow: 0 0 12px rgba(0,0,0,.3);
+    background-color: #FFF;
+    border-radius: 8px;
+    transition: background-color .3s, box-shadow .3s;
+}
+.center-btn{
+    background-color: rgb(29, 214, 109);
+    box-shadow: 0 0 12px rgba(29, 214, 109, .8);
+}
+.card-btn:hover{
+    background-color: rgb(29, 214, 109);
+    box-shadow: 0 0 22px rgba(29, 214, 109, .8);
+}
+.more-offers-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    padding: 12px 0;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    box-shadow: 0 0 12px rgba(29, 214, 109, .6);
+    background-color: rgb(29, 214, 109, .6);
+    border-radius: 8px;
+    transition: background-color .3s, box-shadow .3s;
+}
+.more-offers-btn:hover{
+    background-color: rgb(29, 214, 109);
+    box-shadow: 0 0 22px rgba(29, 214, 109, .8);
+}
+footer{
+    background-color: #EEE;
+    padding: 40px 0 0;
+}
+.top-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+.footer-lists{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+.footer-list{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    min-height: 120px;
+}
+.footer-list-title{
+    font-weight: 700;
+    font-size: 2rem;
+}
+.footer-list-el{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: #333;
+}
+.footer-list-el:hover{
+    color: #888;
+}
+.footer-logo{
+    font-size: 4.2rem;
+    align-self: flex-start;
+    gap: 14px;
+}
+.bottom-footer{
+    padding: 22px 0;
+
+    p{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+}
+
+.burger-icon{
+    display: none;
+}
+.nav-mobile{
+    display: none;
+}
+.btn-mobile-close{
+    border: none;
+    background-color: #FFF;
+    font-size: 3rem;
+    padding: 10px;
+    margin-right: auto;
+    margin-left: 20px;
+}
+.fa-xmark{
+    pointer-events: none;
+}
+.fa-bars{
+    pointer-events: none;
+}
+.form-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5%;
+}
+.image-box{
+    width: 80%;
+}
+.contact-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    width: 80%;
+}
+.input-mail, .textarea{
+    width: 100%;
+    border: 1px solid #CCC;
+    font-size: 1.4rem;
+    padding: 10px 20px;
+}
+.textarea{
+    width: 100%;
+    min-height: 140px;
+    max-height: 260px;
+}
+@media (max-width: 772px){
+    .nav-mobile{
+        position: fixed;
+        top: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: 10px;
+        width: 50%;
+        height: 100%;
+        background-color: #fff;
+        box-shadow: 0 0 15px rgba(0,0,0,.4);
+        z-index: 100;
+        transform: translateX(100%);
+        transition: transform .3s;
+    }
+    .nav-mobile-active{
+        transform: translateX(0);
+    }
+    .nav-option{
+        width: 100%;
+    }
+    .burger-icon{
+        display: block;
+        font-size: 2.8rem;
+        cursor: pointer;
+        padding: 0 20px;
+    }
+    .nav-options{
+        display: none;
+    }
+    .header .hero-text{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        text-align: center;
+    }
+    .h1{
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+    }
+    .h2{
+        font-size: 2.4rem;
+    }
+    .about-us-image{
+        width: 100%;
+    }
+    .about-us-texts{
+        width: 100%;
+    }
+    .about-us-text{
+        text-align: justify;
+        line-height: 2.6rem;
+    }
+    .about-us-image img{
+        width: 100%;
+        margin-right: 0;
+    }
+    .adventure-text{
+        font-size: 2.8rem;
+        padding: 20px 30px;
+        width: 100%;
+    }
+    .adventure .w-65{
+        width: 80%;
+    }
+    .offer{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .cards-box{
+        display: block;
+    }
+    .card-box{
+        margin: 18px 0;
+    }
+    .card-btn{
+        padding: 10px 0;
+    }
+    .more-offers-btn{
+        width: 100%;
+    }
+    .top-footer{
+        display: block;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footer-list-title{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .footer-lists{
+        gap: 10px;
+        margin-top: 30px;
+    }
+    .footer-list{
+        align-items: center;
+        min-width: 25%;
+    }
+}
