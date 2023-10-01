@@ -12,11 +12,11 @@ const aboutus = document.querySelector('#about-us');
 const moreOffersBtn = document.querySelector('.more-offers-btn');
 
 const checkPathName = (section) => {
-    if(location.pathname == '/offers.html'){
+    if(location.pathname == '/offers.html' || location.pathname == '/contact.html'){
         if(section == aboutus){
             location.href="index.html#about-us";
         }else{
-            location.href="index.html#offers";
+            location.href="index.html#offer";
         }
     } else{
         test(section);
@@ -58,7 +58,7 @@ navOffer.forEach(el => el.addEventListener('click', () => {
 }));
 
 navHome.forEach(el => el.addEventListener('click', () => {
-    if(location.pathname == '/offers.html'){
+    if(location.pathname == '/offers.html' || location.pathname == '/contact.html'){
         location.href = "index.html";
     } else{
         scrollTo(0, 0);
